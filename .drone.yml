@@ -17,6 +17,5 @@ steps:
   image: plugins/docker
   settings:
     repo: tintinthong/wubb
-    auto_tag: true
     username:tintinthong
     password:A%&$i73k9mcU
