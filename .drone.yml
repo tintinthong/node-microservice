@@ -18,4 +18,4 @@ steps:
   settings:
     username:tintinthong
     password:docker123
-    repo:tintinthong/node-microservice:
+    repo:tintinthong/node-microservice
