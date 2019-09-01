@@ -7,13 +7,6 @@ steps:
   commands:
   - npm install
   - npm test
-- name:start-notify
-	image:plugins/slack
-	settings:
-		webhook:
-		channel:cicd
-		template:>
-			Build {{build.number}} of  {{build.branch}} started. {{build.link}}		
 - name: start-notify
   image: plugins/slack
   settings:
