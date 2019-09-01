@@ -17,7 +17,7 @@ steps:
 - name: publish
   image: plugins/docker
   settings:
-    repo: nazmulb/node-microservice
+    repo:tintinthong/wubbaluba
     auto_tag: true
     username:
       from_secret:tintinthong
