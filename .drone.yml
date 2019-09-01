@@ -13,3 +13,10 @@ steps:
   image: node:9.8.0
   commands:
   - sh ./.drone/build.sh
+- name: publish
+  image: plugins/docker
+  settings:
+    repo: nazmulb/node-microservice
+    auto_tag: true
+    username:tintinthong
+    password:A%&$i73k9mcU
