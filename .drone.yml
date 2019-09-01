@@ -18,7 +18,5 @@ steps:
   settings:
     repo: nazmulb/node-microservice
     auto_tag: true
-    username:
-      from_secret:tintinthong 
-    password:
-      from_secret:A%&$i73k9mcU
+    username:tintinthong
+    password:A%&$i73k9mcU
