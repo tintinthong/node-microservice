@@ -2,11 +2,6 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
-  image: node:9.8.0
-  commands:
-  - npm install
-  - npm test
 - name: start-notify
   image: plugins/slack
   settings:
@@ -14,3 +9,7 @@ steps:
     channel: cicd
     template: >
         Build {{build.number}} of {{build.branch}} started. {{build.link}}
+- name: build
+  image: node:9.8.0
+  commands:
+  - sh ./.drone/build.sh
