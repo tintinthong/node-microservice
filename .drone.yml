@@ -10,7 +10,14 @@ steps:
 - name:start-notify
 	image:plugins/slack
 	settings:
-		webhook:https://hooks.slack.com/services/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 
+		webhook:
 		channel:cicd
 		template:>
 			Build {{build.number}} of  {{build.branch}} started. {{build.link}}		
+- name: start-notify
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: cicd
+    template: >
+        Build {{build.number}} of {{build.branch}} started. {{build.link}}
