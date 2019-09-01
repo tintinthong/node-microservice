@@ -13,7 +13,6 @@ steps:
   image: node:9.8.0
   commands:
   - sh ./.drone/build.sh
-
 - name: publish
   image: plugins/docker
   settings:
