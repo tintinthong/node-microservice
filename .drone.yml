@@ -16,7 +16,7 @@ steps:
 - name: publish
   image: plugins/docker
   settings:
-    repo: nazmulb/node-microservice
+    repo: tintinthong/node-microservice
     auto_tag: true
     username:tintinthong
     password:A%&$i73k9mcU
