@@ -19,10 +19,10 @@ steps:
 #    username: tintinthong
 #    password: docker123
 #    repo: tintinthong/whatever
-- name: deploy
-  image: docker
-  commands:
-  - sh ./.drone/deploy.sh
-  volumes:
-  - name: docker
-    path: /var/run/docker.sock
+#- name: deploy
+#  image: docker
+#  commands:
+#  - sh ./.drone/deploy.sh
+#  volumes:
+#  - name: docker
+#    path: /var/run/docker.sock
