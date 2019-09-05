@@ -26,10 +26,10 @@ steps:
   image: plugins/gcr
   settings:
     registry: asia.gcr.io
-    repo: tintinthong/whatever
+    repo: drone-251904
     tags: latest
     json_key:
-      from_secret:gcr_credentials 
+      from_secret:google_credentials 
 - name: deploy
   image: docker
   commands:
