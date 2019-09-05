@@ -26,7 +26,7 @@ steps:
   image: plugins/gcr
   settings:
     registry: asia.gcr.io
-    repo: project/foo
+    repo: tintinthong/whatever
     tags: latest
     json_key:
       from_secret:gcr_credentials 
