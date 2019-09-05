@@ -21,6 +21,15 @@ steps:
 #    password:
 #      from_secret: docker_password
 #    repo: tintinthong/whatever
+steps:
+- name: publish  
+  image: plugins/gcr
+  settings:
+    registry: asia.gcr.io
+    repo: project/foo
+    tags: latest
+    json_key:
+      from_secret:gcr_credentials 
 - name: deploy
   image: docker
   commands:
