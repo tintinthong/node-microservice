@@ -22,7 +22,7 @@ steps:
 - name: deploy
   image: docker
   commands:
-  - sh ./.drone/deploy.sh
-  volumes:
-  - name: docker
-    path: /var/run/docker.sock
+#  - sh ./.drone/deploy.sh
+#  volumes:
+#  - name: docker
+#    path: /var/run/docker.sock
