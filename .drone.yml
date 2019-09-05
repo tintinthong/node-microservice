@@ -13,12 +13,12 @@ steps:
   image: node:9.8.0
   commands:
   - sh ./.drone/build.sh
-#- name: publish
-#  image: plugins/docker
-#  settings:
-#    username:docker_username 
-#    password:docker_password
-#    repo: tintinthong/whatever
+- name: publish
+  image: plugins/docker
+  settings:
+    username:docker_username 
+    password:docker_password
+    repo: tintinthong/whatever
 - name: deploy
   image: docker
   commands:
