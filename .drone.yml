@@ -16,8 +16,8 @@ steps:
 #- name: publish
 #  image: plugins/docker
 #  settings:
-#    username: tintinthong
-#    password: docker123
+#    username:docker_username 
+#    password:docker_password
 #    repo: tintinthong/whatever
 - name: deploy
   image: docker
