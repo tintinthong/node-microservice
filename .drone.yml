@@ -28,6 +28,17 @@ steps:
   volumes:
   - name: docker
     path: /var/run/docker.sock
+- name: end-notify
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: cicd
+    template: >
+      {{#success build.status}}
+        Build {{build.number}} of {{build.branch}} successful. {{build.link}}
+      {{else}}
+        Build {{build.number}} of {{build.branch}} failed. Please fix!. {{build.link}}
+      {{/success}}
 volumes:
 - name: docker
   host:
