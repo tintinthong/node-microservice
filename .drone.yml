@@ -26,7 +26,7 @@ steps:
   image: plugins/gcr
   settings:
     registry: asia.gcr.io
-    repo: tintinthong/node-microservice
+    repo: asia.grc.io/drone-251904/drone 
     tags: latest
     json_key:
       from_secret:google_credentials 
