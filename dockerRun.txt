@@ -2,8 +2,8 @@ docker run \
   --volume=/var/run/docker.sock:/var/run/docker.sock \
   --volume=/data \
   --env=DRONE_GITHUB_SERVER=https://github.com \
-  --env=DRONE_GITHUB_CLIENT_ID=0785bedc807331ae664b\
-  --env=DRONE_GITHUB_CLIENT_SECRET=c6a3188118e16ac225445a653d36030bfb646567\
+  --env=DRONE_GITHUB_CLIENT_ID=\
+  --env=DRONE_GITHUB_CLIENT_SECRET=\
   --env=DRONE_RUNNER_CAPACITY=2 \
   --env=DRONE_SERVER_HOST=96146bf7.ngrok.io\
   --env=DRONE_SERVER_PROTO=https \
