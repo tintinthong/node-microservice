@@ -55,7 +55,7 @@ volumes:
 ---
 kind: pipeline
 type: ssh
-name: default
+name: sshpipeline 
 
 server:
   host: root@165.22.104.56 
