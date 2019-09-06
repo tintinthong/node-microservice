@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-if [ "$(docker ps -aq -f name=<nazmul_node_micro>)" ]; then
+if [ "$(docker ps -aq -f name=nazmul_node_micro)" ]; then
         # cleanup
-        docker rm <nazmul_node_micro>
+        docker rm nazmul_node_micro
 fi
  
 #docker rm -f nazmul_node_micro
