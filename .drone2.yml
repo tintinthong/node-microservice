@@ -4,10 +4,10 @@ type: ssh
 name: default
 
 server:
-  host: 1.2.3.4
+  host: root@165.22.104.56 
   user: root
-  password:
-    from_secret: password
+  ssh_key:
+    from_secret: ssh_key 
 
 steps:
 - name: greeting
