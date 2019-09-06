@@ -59,6 +59,8 @@ name: sshpipeline
 
 server:
   host: root@165.22.104.56 
+  ssh_key: 
+    from_secret:ssh_key
 #  user: root
 #  password: correct-horse-battery-staple
 
