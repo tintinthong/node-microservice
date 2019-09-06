@@ -1,12 +1,11 @@
 pipeline:
   ssh:
     image: appleboy/drone-ssh
-    host: 165.22.104.56
     settings:
-      host: 165.22.104.56 
       key:
         from_secret:ssh_key
       port: 22
+      host: 165.22.104.56 
       script:
         - echo hello
         - echo world
