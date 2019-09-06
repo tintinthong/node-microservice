@@ -63,6 +63,7 @@ server:
     from_secret: ssh_key
 
 steps:
-- name: hello
+- name: greeting
   commands:
-    - echo helloworld
+  - echo hello world
+---
