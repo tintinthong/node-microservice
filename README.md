@@ -14,3 +14,4 @@ https://cloud.google.com/container-registry/docs/advanced-authentication
 Authentication added by putting helpers in docker config file 
 https://cloud.google.com/container-registry/docs/using-with-google-cloud-platform#requirements
 https://ljvmiranda921.github.io/notebook/2019/06/16/gcr-to-drone/
+slkdjnbfajksd
