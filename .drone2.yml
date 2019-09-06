@@ -1,6 +1,7 @@
 pipeline:
   ssh:
     image: appleboy/drone-ssh
+    host: 165.22.104.56
     settings:
       host: 165.22.104.56 
       key:
