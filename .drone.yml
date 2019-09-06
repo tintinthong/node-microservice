@@ -13,22 +13,22 @@ steps:
   image: node:9.8.0
   commands:
   - sh ./.drone/build.sh
-#- name: dockerhubpush 
-#  image: plugins/docker
-#  settings:
-#    username:
-#      from_secret: docker_username
-#    password:
-#      from_secret: docker_password
-#    repo: tintinthong/node-microservice
-#- name: gcrpush 
-#  image: plugins/gcr
-#  settings:
-#    registry: asia.gcr.io
-#    repo: drone-251904/node-microservice
-#    tags: latest
-#    json_key: 
-#      from_secret: google_credentials_base64 
+- name: dockerhubpush 
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: tintinthong/node-microservice
+- name: gcrpush 
+  image: plugins/gcr
+  settings:
+    registry: asia.gcr.io
+    repo: drone-251904/node-microservice
+    tags: latest
+    json_key: 
+      from_secret: google_credentials_base64 
 - name: deploy
   image: docker
   commands:
