@@ -4,12 +4,12 @@ type: ssh
 name: default
 
 server:
-  host: root@165.22.104.56 
+  host: 165.22.104.56 
   user: root
   ssh_key:
     from_secret: ssh_key 
 
 steps:
-- name: greeting
+- name: mkdir 
   commands:
-  - echo hello world
+  - mkdir hi
