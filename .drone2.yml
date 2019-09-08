@@ -8,6 +8,6 @@ platform:
 
 steps:
 - name: hello-world 
-  image: hello-world 
+  image: busybox
   commands:
-  - docker run hello-world 
+  - docker run busybox echo "hello from busybox"
