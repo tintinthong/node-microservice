@@ -2,6 +2,10 @@ kind: pipeline
 type: ssh
 name: default
 
+platform:
+  os: linux
+  arch: amd64
+
 server:
   host:
     from_secret: 165.22.104.56
