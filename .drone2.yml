@@ -1,15 +1,14 @@
+---
 kind: pipeline
-type: ssh
+type: exec
 name: default
 
-server:
-  host: 70c7d140.ngrok.io 
-  user: root
-  ssh_key: 
-    from_secret:ssh_key 
+platform:
+  os: linux
+  arch: amd64
 
 steps:
-- name: build
+- name: greeting
   commands:
-  - go build
-  - go test
+  - mkdir hello 
+
