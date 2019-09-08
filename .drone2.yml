@@ -1,10 +1,7 @@
-pipeline:
-  ssh:
-    image: appleboy/drone-ssh
-    settings:
-      host: root@165.22.104.56 
-      key:
-        from_secret:ssh_key
-      script:
-        - echo hello
-        - echo world
+server:
+  host:
+    from_secret: 165.22.104.56
+  user:
+    from_secret: root 
+  ssh_key:
+    from_secret: ssh_key
