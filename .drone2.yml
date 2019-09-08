@@ -3,7 +3,7 @@ type: ssh
 name: default
 
 server:
-  host: 165.22.104.56
+  host: 70c7d140.ngrok.io 
   user: root
   ssh_key: 
     from_secret:ssh_key 
