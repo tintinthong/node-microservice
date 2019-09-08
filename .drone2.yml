@@ -1,13 +1,15 @@
----
 kind: pipeline
+type: ssh
 name: default
 
-platform:
-  os: linux
-  arch: amd64
+server:
+  host: 165.22.104.56
+  user: root
+  ssh_key: 
+    from_secret:ssh_key 
 
 steps:
-- name: hello-world 
-  image: hello-world 
+- name: build
   commands:
-  - /hello 
+  - go build
+  - go test
