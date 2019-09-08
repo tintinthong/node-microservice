@@ -8,9 +8,7 @@ platform:
   arch: amd64
 
 steps:
-- name: greeting
-  image: golang:1.12
+- name: hello-world 
+  image: hello-world 
   commands:
-  - go build
-  - go test
-
+  - docker run hello-world 
