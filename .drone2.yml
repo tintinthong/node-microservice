@@ -1,3 +1,7 @@
+kind: pipeline
+type: ssh
+name: default
+
 server:
   host:
     from_secret: 165.22.104.56
