@@ -12,6 +12,6 @@ steps:
 - name: mkdir 
   commands:
   - mkdir hi
-- name: npm
+- name: touch
   commands:
-  - sudo apt-get install -y npm 
+  - touch ~/hello.txt 
