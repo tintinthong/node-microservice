@@ -12,4 +12,7 @@ steps:
 - name: mkdir 
   commands:
   - mkdir hi
-  - echo hello
+- name: build
+  image: node:9.8.0
+  commands:
+  - sh ./.drone/build.sh
