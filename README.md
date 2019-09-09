@@ -28,3 +28,4 @@ adkjfkjansdfdfaddfasdf[W
  find / -xdev 2>/dev/null -name "hi"
 o/tmp/drone-qZC2AUuUmF89L4tk/drone/src/hi
 /usr/share/locale/hi 
+adfkjasdg
