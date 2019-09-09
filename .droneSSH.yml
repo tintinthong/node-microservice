@@ -9,12 +9,10 @@ server:
     from_secret: ssh_key 
 
 steps:
-- name: mkdir 
-  commands:
-  - mkdir "~/hi"
 - name: touch
   commands:
   - touch ~/hello.txt 
+  - echo "hello world" >> ~/hello.txt
 - name: dockerpull 
   commands:
   - docker pull python 
