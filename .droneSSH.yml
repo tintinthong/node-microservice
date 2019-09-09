@@ -11,7 +11,7 @@ server:
 steps:
 - name: touch
   commands:
-  - sh ./.drone/hello.sh
+  - mkdir hello 
 - name: dockertest
   commands:
   - docker pull python 
