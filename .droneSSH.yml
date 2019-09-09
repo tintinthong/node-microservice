@@ -12,14 +12,6 @@ steps:
 - name: mkdir 
   commands:
   - mkdir hi
-- name: buildgo 
+- name: npm
   commands:
-  - go build
-  - go test
-  environment:
-    GOOS: linux
-    GOARCH: amd64
-- name: build
-  image: node:9.8.0
-  commands:
-  - sh ./.drone/build.sh
+  - apt install npm
