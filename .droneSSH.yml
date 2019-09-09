@@ -12,3 +12,4 @@ steps:
 - name: mkdir 
   commands:
   - mkdir hi
+  - echo hello
