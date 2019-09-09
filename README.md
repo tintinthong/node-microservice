@@ -29,3 +29,4 @@ adkjfkjansdfdfaddfasdf[W
 o/tmp/drone-qZC2AUuUmF89L4tk/drone/src/hi
 /usr/share/locale/hi 
 adfkjasdg
+adsfasf
