@@ -11,7 +11,7 @@ server:
 steps:
 - name: touch
   commands:
-  - mkdir hello 
+  - mkdir /home/hello 
 - name: dockertest
   commands:
   - docker pull python 
