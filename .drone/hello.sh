@@ -1,6 +1,6 @@
-cd root 
-mkdir root/hellodir
+mkdir ~/hellodir
 cd hellodir 
 touch hello.txt
 echo "hello world" >> hello.txt
+echo 'hey' 
 
