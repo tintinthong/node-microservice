@@ -22,7 +22,7 @@ steps:
 - name: dockertestimage
   image: docker
   commands:
-  - docker pull busybox 
+  - docker pull node 
   volumes:
   - name: docker
     path: /var/run/docker.sock
