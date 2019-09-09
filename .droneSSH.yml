@@ -15,3 +15,6 @@ steps:
 - name: dockerpull 
   commands:
   - docker pull python 
+- name: gitpull 
+  - git pull https://github.com/tintinthong/efficient-programmer.git
+
