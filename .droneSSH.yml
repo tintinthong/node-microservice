@@ -12,10 +12,17 @@ steps:
 - name: touch
   commands:
   - sh ./.drone/hello.sh
-- name: dockerpull 
+- name: dockertest
   commands:
   - docker pull python 
+  - docker run python
 - name: gitclone
   commands: 
   - git clone  https://github.com/tintinthong/efficient-programmer.git
-
+- name: dockertestimage
+  image: docker
+  commands:
+  - docker pull busybox 
+  volumes:
+  - name: docker
+    path: /var/run/docker.sock
