@@ -3,3 +3,4 @@ set -e
 
 npm install
 npm test
+touch file.js
