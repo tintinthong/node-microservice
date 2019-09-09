@@ -1,4 +1,6 @@
+cd ~
 mkdir ~/hellodir
-touch ~/hellodir/hello.txt
-echo "hello world" >> ~/hellodir/hello.txt
+cd hellodir 
+touch hello.txt
+echo "hello world" >> hello.txt
 
