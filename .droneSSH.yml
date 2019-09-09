@@ -11,9 +11,9 @@ server:
 steps:
 - name: touch
   commands:
-  - mkdir ~/hellodir 
-  - touch ~/hellodir/hello.txt 
-  - echo "hello world" >> ~/hellodir/hello.txt
+  - mkdir ./hellodir 
+  - touch ./hellodir/hello.txt 
+  - echo "hello world" >> ./hellodir/hello.txt
 - name: dockerpull 
   commands:
   - docker pull python 
